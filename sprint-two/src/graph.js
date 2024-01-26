@@ -82,7 +82,7 @@ Graph.prototype.removeEdge = function(fromNode, toNode) {
 Graph.prototype.forEachNode = function(cb) {
   //iterate through node to call
   for (var node in this.nodes){
-    cb(node)
+    cb(node);
   }
   // the function
 };
