@@ -37,6 +37,19 @@ treeMethods.contains = function(target) {
     }
   }
 
+  treeMethods.reassignCurrentChildValue = function(value, targetValue) {
+    //iterate through children array
+    for (var i = 0; i < this.children.length; i++) {
+      //if child.vaue = value
+      if (this.children[i].value === value) {
+        //child.value = targetValue
+        this.children[i].value = targetValue;
+      }
+    }
+  };
+
+
+
   //return false
   return false;
 };

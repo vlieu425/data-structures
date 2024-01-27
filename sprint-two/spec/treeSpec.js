@@ -41,4 +41,11 @@ describe('tree', function() {
     expect(tree.contains(8)).to.equal(true);
   });
 
+  it('should return true for a value that was reassigned', function() {
+    tree.addChild(5);
+    tree.reassignCurrentChildValue(5, 10);
+    expect(tree.contains(10)).to.equal(true);
+  });
+
+
 });
