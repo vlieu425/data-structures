@@ -29,7 +29,7 @@ setPrototype.remove = function(item) {
 //check if the storage has the item
 // //if yes, delete it
 //   if(this.storage[item]) {
-    delete this._storage[item];
+  delete this._storage[item];
 
 };
 

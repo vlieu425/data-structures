@@ -32,10 +32,10 @@ Graph.prototype.contains = function(node) {
 Graph.prototype.removeNode = function(node) {
   //if node exists (contain)
   if (this.contains(node)) {
-    for (var connectedNode in this.nodes[node]){
+    for (var connectedNode in this.nodes[node]) {
       // if (this.hasEdge(node)) {
-        //   //removeEdge (node)
-      this.removeEdge(connectedNode,node)
+      //   //removeEdge (node)
+      this.removeEdge(connectedNode, node);
     }
     //delete node
     delete this.nodes[node];
@@ -81,7 +81,7 @@ Graph.prototype.removeEdge = function(fromNode, toNode) {
 // Pass in a callback which will be executed on each node of the graph.
 Graph.prototype.forEachNode = function(cb) {
   //iterate through node to call
-  for (var node in this.nodes){
+  for (var node in this.nodes) {
     cb(node);
   }
   // the function
